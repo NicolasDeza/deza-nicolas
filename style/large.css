@@ -1,3 +1,70 @@
 header {
-  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+header figure {
+  margin: 0;
+  order: 1;
+  text-align: left;
+}
+
+header nav {
+  margin-left: auto;
+  order: 2;
+  width: auto;
+  margin-right: 60px;
+}
+
+nav ul {
+  gap: 15px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "slider slider slider"
+    "produit produit produit"
+    "contenu contenu contenu";
+}
+
+.produit-card {
+  width: 30%;
+  margin: 10px;
+}
+
+section#contenu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+section#contenu > figure,
+section#contenu > p {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 600px;
+  align-items: center;
+  flex: 1;
+}
+section#contenu img {
+  height: 50%;
+  width: 150px;
+}
+
+section#contenu > figure:nth-child(2),
+section#contenu > p:nth-child(3) {
+  flex-direction: row-reverse;
+}
+
+section#contenu p {
+  margin: 0;
+  padding: 20px;
 }
