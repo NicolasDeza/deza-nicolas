@@ -1,0 +1,23 @@
+body {
+  background-color: #fff;
+  font-family: serif;
+  font-size: 10pt;
+}
+container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav,
+footer,
+figure {
+  display: none;
+}
+img {
+  display: none;
+}
+
+a::after {
+  content: "(" attr(href) ")";
+}
